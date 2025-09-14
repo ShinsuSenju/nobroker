@@ -278,7 +278,7 @@ public class PropertyListPage extends BasePage {
         // Validate filters on first property card
         String cardTenant = firstPropertyTenants.getText().toLowerCase();
         String selectedTenant = preferredTenant.toLowerCase();
-        System.out.println(cardTenant + "         "+ selectedTenant);
+//        System.out.println(cardTenant + "         "+ selectedTenant);
         boolean tenantMatches = cardTenant.contains(selectedTenant) || cardTenant.contains("all") || selectedTenant.contains(cardTenant);
 
 
@@ -315,11 +315,11 @@ public class PropertyListPage extends BasePage {
 
         boolean allFiltersApplied = tenantMatches && furnishingMatches && bhkMatches && priceMatches && availabilityMatches;
 
-        System.out.println("Tenant Match: " + tenantMatches);
-        System.out.println("Furnishing Match: " + furnishingMatches);
-        System.out.println("Type Match: " + bhkMatches);
-        System.out.println("Price Match: " + priceMatches);
-        System.out.println("Availability Match: " + availabilityMatches);
+//        System.out.println("Tenant Match: " + tenantMatches);
+//        System.out.println("Furnishing Match: " + furnishingMatches);
+//        System.out.println("Type Match: " + bhkMatches);
+//        System.out.println("Price Match: " + priceMatches);
+//        System.out.println("Availability Match: " + availabilityMatches);
 
         return allFiltersApplied;
     	

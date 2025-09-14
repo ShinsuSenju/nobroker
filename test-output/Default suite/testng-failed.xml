@@ -5,11 +5,12 @@
     <classes>
       <class name="com.nobroker.test.Profile">
         <methods>
-          <include name="sortProperties"/>
+          <include name="setupParameters"/>
           <include name="finalizeReport"/>
-          <include name="setupReport"/>
+          <include name="sortProperties"/>
+          <include name="initTestandParameters"/>
+          <include name="setupReportandParameters"/>
           <include name="tearDown"/>
-          <include name="initTest"/>
         </methods>
       </class> <!-- com.nobroker.test.Profile -->
     </classes>

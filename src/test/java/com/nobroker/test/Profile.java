@@ -11,6 +11,7 @@ import com.nobroker.pages.PropertyListPage;
 import com.nobroker.setup.BaseSteps;
 import com.nobroker.utils.ExtentManager;
 import com.nobroker.parameter.ExcelReader;
+import com.nobroker.parameter.PropertyReader;
 
 import java.lang.reflect.Method;
 
@@ -28,18 +29,53 @@ public class Profile {
 
 
     // ===================== Setup & Teardown =====================
+    
+
+    String city;
+    String locality1;
+    String locality2;
+    String locality3;
+
+    @Parameters({"city", "locality1", "locality2", "locality3"})
+    @BeforeMethod
+    public void setupParameters(String city, String locality1, String locality2, String locality3) {
+        this.city = city;
+        this.locality1 = locality1;
+        this.locality2 = locality2;
+        this.locality3 = locality3;
+    }
+
     // Initializes the extent report before all tests
     @BeforeClass
-    public void setupReport() {
+    public void setupReportandParameters() {
         extentManager = new ExtentManager(); 
         extentManager.reportGeneration();
+        
     }
 
 
     // Initializes WebDriver and page objects before each test
+    @Parameters({"Browser"})
     @BeforeMethod
-    public void initTest(Method method) {
-        driver = BaseSteps.edgeDriver();
+    public void initTestandParameters(@Optional("Browser") String Browser,Method method) {
+    	switch(Browser) {
+    	case "edge" : {
+    		driver = BaseSteps.edgeDriver();
+    		break;
+    	}
+    	case "chrome":{
+    		driver = BaseSteps.chromeDriver();
+    		break;
+    	}
+    	case "firefox": {
+    		driver = BaseSteps.firefoxDriver();
+    		break;
+    	}
+    	default : {
+    		driver = BaseSteps.edgeDriver();
+    		break;
+    	}
+    	}
         extentManager.driver = driver;
         extentManager.reportCreation(method);
         driver.get("https://www.nobroker.in");
@@ -151,11 +187,11 @@ public class Profile {
      * Description: Validates filter functionality on property search.
      */
     @Test(priority = 4, dataProvider = "filterDataProvider", dataProviderClass = ExcelReader.class, description = "Validates filter functionality on property search (DP)")
-    public void validFilters(String bhk, int minPrice, int maxPrice, String availability, String tenant, String propertyType, String furnishing, String parking) throws InterruptedException {
-        String[] localities = {"airoli", "rabale", "ghansoli"};
+    public void validFilters(String city,String locality1,String locality2,String locality3,String bhk, int minPrice, int maxPrice, String availability, String tenant, String propertyType, String furnishing, String parking) throws InterruptedException {
+        String[] localities = {locality1,locality2,locality3};
         homePage = new HomePage(driver);
         homePage.clickOnRent();
-        homePage.selectCity("Mumbai");
+        homePage.selectCity(city);
         homePage.enterArea(localities[0]);
         homePage.selectLocality();
         homePage.clickSearch();
@@ -174,10 +210,10 @@ public class Profile {
      */
     @Test(priority = 5, dataProvider = "filterDataProvider", dataProviderClass = ExcelReader.class, description = "Resets filters and checks if filters are cleared (DP)")
     public void resetFilters(String bhk, int minPrice, int maxPrice, String availability, String tenant, String propertyType, String furnishing, String parking) throws InterruptedException {
-        String[] localities = {"airoli"};
-        homePage = new HomePage(driver);
-        homePage.clickOnRent();
-        homePage.selectCity("Mumbai");
+    	 String[] localities = {locality1,locality2,locality3};
+         homePage = new HomePage(driver);
+         homePage.clickOnRent();
+         homePage.selectCity(city);
         homePage.enterArea(localities[0]);
         homePage.selectLocality();
         homePage.clickSearch();
@@ -196,11 +232,10 @@ public class Profile {
      */
     @Test(priority = 6, description = "Attempts to get owner details without login, expects sign-up popup.")
     public void getOwnerDetailsWithoutLogin() throws InterruptedException {
-    	String[] localities = {"airoli"};
-
-        homePage = new HomePage(driver);
-        homePage.clickOnRent();
-        homePage.selectCity("Mumbai");
+    	 String[] localities = {locality1,locality2,locality3};
+         homePage = new HomePage(driver);
+         homePage.clickOnRent();
+         homePage.selectCity(city);
         homePage.enterArea(localities[0]);
         homePage.selectLocality();
         homePage.clickSearch();
@@ -224,13 +259,12 @@ public class Profile {
      */
     @Test(priority = 7, description = "Attempts to get owner details after login, expects contacted state.")
     public void getOwnerDetailsWithLogin() throws InterruptedException {
-    	String[] localities = {"Palam"};
-
-        homePage = new HomePage(driver);
-        homePage.loginNoBroker("7982969325");
-        Thread.sleep(20000);
-        homePage.clickOnRent();
-        homePage.selectCity("Delhi");
+    	 String[] localities = {locality1,locality2,locality3};
+         homePage = new HomePage(driver);
+         homePage.loginNoBroker(PropertyReader.getDataFromPropertyFile("mobile"));
+         Thread.sleep(20000);
+         homePage.clickOnRent();
+         homePage.selectCity(city);
         homePage.enterArea(localities[0]);
         homePage.selectLocality();
         homePage.clickSearch();
@@ -255,17 +289,19 @@ public class Profile {
      */
     @Test(priority = 8, description = "Sorts properties by price and validates sorting.")
     public void sortProperties() throws InterruptedException {
-    	String[] localities = {"Lajpat"};
-        homePage = new HomePage(driver);
-        homePage.clickOnRent();
-        homePage.selectCity("Delhi");
+    	 String[] localities = {locality1,locality2,locality3};
+         homePage = new HomePage(driver);
+         homePage.clickOnRent();
+         homePage.selectCity(city);
+        Thread.sleep(10000);
         homePage.enterArea(localities[0]);
         homePage.selectLocality();
         homePage.clickSearch();
+        
         propertyListPage = new PropertyListPage(driver);
         propertyListPage.skipAnnoyingPopUp();
         propertyListPage.sortByPrice();
-        Thread.sleep(2000);
+//        Thread.sleep(2000);
         boolean flag = propertyListPage.validateSort();
         Assert.assertTrue(flag, "[TestCase 9] Expected: Properties should be sorted by price (low to high). Actual: Sorting failed.");
         
@@ -304,7 +340,7 @@ public class Profile {
     public Object[][] getFourLocalityData() {
         return new Object[][] {
             {"Mumbai", "airoli", new String[]{"rabale", "ghansoli", "thane"}},
-            {"Pune", "baner", new String[]{"kothrud", "wakad", "shivajinagar"}}
+            {"Delhi", "palam", new String[]{"mahipalpur", "karol", "shivajinagar"}}
         };
     }
  

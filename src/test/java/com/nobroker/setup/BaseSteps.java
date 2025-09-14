@@ -7,6 +7,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+
+import java.time.Duration;
 import java.util.*;
 
 
@@ -38,6 +40,7 @@ public class BaseSteps {
 	        "disable-extensions"
 	    ));
 	    driver = new ChromeDriver(chromeOptions);
+//	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	    return driver;
 	}
 
