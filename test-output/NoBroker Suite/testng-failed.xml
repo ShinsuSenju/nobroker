@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="Failed suite [NoBroker Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="methods" name="Tests(failed)">
+    <classes>
+      <class name="com.nobroker.test.Profile">
+        <methods>
+          <include name="invalidInputSearch"/>
+          <include name="validSearchWithLocalities"/>
+          <include name="validFilters"/>
+          <include name="validInputTest" invocation-numbers="0 1 2"/>
+          <include name="validSearchWith4Localities"/>
+          <include name="tearDown"/>
+          <include name="initTest"/>
+        </methods>
+      </class> <!-- com.nobroker.test.Profile -->
+    </classes>
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [NoBroker Suite] -->
