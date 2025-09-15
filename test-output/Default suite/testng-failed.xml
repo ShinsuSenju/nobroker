@@ -5,11 +5,17 @@
     <classes>
       <class name="com.nobroker.test.Profile">
         <methods>
-          <include name="setupParameters"/>
           <include name="finalizeReport"/>
           <include name="sortProperties"/>
-          <include name="initTestandParameters"/>
-          <include name="setupReportandParameters"/>
+          <include name="invalidInputSearch"/>
+          <include name="setupTestContext"/>
+          <include name="validFilters"/>
+          <include name="validSearchWithLocalities"/>
+          <include name="getOwnerDetailsWithLogin"/>
+          <include name="validInputTest"/>
+          <include name="resetFilters"/>
+          <include name="getOwnerDetailsWithoutLogin"/>
+          <include name="validSearchWith4Localities"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.nobroker.test.Profile -->

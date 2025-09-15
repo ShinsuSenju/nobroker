@@ -54,6 +54,10 @@ public class ExtentManager {
     /**
      * Creates a test entry in the report using the method name and description.
      */
+
+    /**
+     * Creates a test entry in the report using the method name, description, and actual parameter values.
+     */
     public void reportCreation(Method method) {
         String description = "";
         if (method.isAnnotationPresent(Test.class)) {
@@ -65,9 +69,13 @@ public class ExtentManager {
                      .assignCategory("Web UI Test");
 
         if (!description.isEmpty()) {
-            test.log(Status.INFO, "📝 Description: " + description);
+            test.log(Status.INFO, " Description: " + description);
         }
+
+       
     }
+
+
 
     /**
      * Adds screenshot and logs based on test result status.

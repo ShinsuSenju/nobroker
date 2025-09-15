@@ -63,6 +63,8 @@ public class BasePage {
         jsExecutor.executeScript("arguments[0].scrollIntoView(true)", webElement);
     }
     
+    
+    // Clicks an element Using JS
     public void clickUsingJs(WebElement webElement) {
     	jsExecutor.executeScript("arguments[0].click();", webElement);
     }
@@ -85,11 +87,13 @@ public class BasePage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
     
+    // waits until element become invisible
     public void waitUntilInvisibile(WebElement webElement,int sec) {
     	wait = new WebDriverWait(driver,Duration.ofSeconds(sec));
     	wait.until(ExpectedConditions.invisibilityOf(webElement));
     }
     
+    // waits until element become disabled
     public void waitUntilDisabled(WebElement webElement,int sec) {
     	wait = new WebDriverWait(driver,Duration.ofSeconds(sec));
     	wait.until(ExpectedConditions.attributeContains(webElement,"disabled",""));
