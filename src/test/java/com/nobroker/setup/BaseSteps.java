@@ -40,7 +40,7 @@ public class BaseSteps {
 	        "disable-extensions"
 	    ));
 	    driver = new ChromeDriver(chromeOptions);
-//	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	    return driver;
 	}
 
@@ -56,6 +56,7 @@ public class BaseSteps {
 	        "disable-extensions"   
 	    ));
 	    driver = new EdgeDriver(edgeOptions);
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	    return driver;
 	}
 	

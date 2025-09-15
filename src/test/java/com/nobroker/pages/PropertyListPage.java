@@ -107,7 +107,7 @@ public class PropertyListPage extends BasePage {
     // Selects the first suggestion from the dropdown
     public void selectLocality() {
         try {
-            waitUntilVisibility(selectArea, 10);
+            waitUntilClick(selectArea, 10);
             action.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
         } catch (Exception e) {
             // Ignore if dropdown doesn't appear
@@ -117,13 +117,10 @@ public class PropertyListPage extends BasePage {
 
 
     // Clicks the search button and waits for results
-    public void clickSearch() {
+    public void clickSearch() throws InterruptedException {
+    	Thread.sleep(1000);
         searchBtn.click();
-        try {
-            Thread.sleep(3000); // Consider replacing with explicit wait
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+     
     }
     
 

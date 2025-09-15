@@ -19,7 +19,7 @@ public class ExcelReader {
 		}
 	}
 
-	// For DataProvider: always reads columns as (String, int, int, String, String, String, String, String, String)
+	// For DataProvider: always reads columns as (String, int, int, String, String, String, String, String)
 	public Object[][] getSheetData(int sheetNo) {
 		Sheet sheet = workbook.getSheetAt(sheetNo);
 		int rowCount = sheet.getPhysicalNumberOfRows();

@@ -82,7 +82,8 @@ public class HomePage extends BasePage {
 	}
 
 	// Clicks the Search button
-	public void clickSearch() {
+	public void clickSearch() throws InterruptedException {
+		Thread.sleep(1000);
 		searchBtn.click();
 	}
 }

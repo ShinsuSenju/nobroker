@@ -1,0 +1,3110 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>NoBroker Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Functional Testing - Web UI</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sept 15, 2025 02:33:44 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">AnuragSingh</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">WebUITest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validInputTest</p>
+            <p class="text-sm">
+              <span>2:33:50 pm</span> / <span>00:00:54:260</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validInputTest</h5>
+<span class='badge badge-success'>09.15.2025 2:33:50 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:34:44 pm</span>
+<span class='badge badge-default'>00:00:54:260</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validInputTest_2025-34-15 14-34-44.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validInputTest_2025-34-15 14-34-44.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:33:50 pm</td>
+        <td>
+          📝 Description: To validate search with valid input
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:33:50 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:34:44 pm</td>
+        <td>
+          ✅ Test Passed: validInputTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:34:44 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validInputTest</p>
+            <p class="text-sm">
+              <span>2:34:50 pm</span> / <span>00:00:19:026</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validInputTest</h5>
+<span class='badge badge-success'>09.15.2025 2:34:50 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:35:09 pm</span>
+<span class='badge badge-default'>00:00:19:026</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validInputTest_2025-35-15 14-35-09.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validInputTest_2025-35-15 14-35-09.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:34:50 pm</td>
+        <td>
+          📝 Description: To validate search with valid input
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:34:50 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:09 pm</td>
+        <td>
+          ✅ Test Passed: validInputTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:09 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validInputTest</p>
+            <p class="text-sm">
+              <span>2:35:16 pm</span> / <span>00:00:10:443</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validInputTest</h5>
+<span class='badge badge-success'>09.15.2025 2:35:16 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:35:26 pm</span>
+<span class='badge badge-default'>00:00:10:443</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validInputTest_2025-35-15 14-35-26.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validInputTest_2025-35-15 14-35-26.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:35:16 pm</td>
+        <td>
+          📝 Description: To validate search with valid input
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:35:16 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:26 pm</td>
+        <td>
+          ✅ Test Passed: validInputTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:26 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: invalidInputSearch</p>
+            <p class="text-sm">
+              <span>2:35:33 pm</span> / <span>00:00:19:495</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: invalidInputSearch</h5>
+<span class='badge badge-success'>09.15.2025 2:35:33 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:35:53 pm</span>
+<span class='badge badge-default'>00:00:19:495</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/invalidInputSearch_2025-35-15 14-35-52.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/invalidInputSearch_2025-35-15 14-35-52.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:35:33 pm</td>
+        <td>
+          📝 Description: To validate error message for invalid locality input
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:35:33 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:53 pm</td>
+        <td>
+          ✅ Test Passed: invalidInputSearch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:35:53 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: invalidInputSearch</p>
+            <p class="text-sm">
+              <span>2:35:59 pm</span> / <span>00:00:16:929</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: invalidInputSearch</h5>
+<span class='badge badge-success'>09.15.2025 2:35:59 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:36:16 pm</span>
+<span class='badge badge-default'>00:00:16:929</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/invalidInputSearch_2025-36-15 14-36-16.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/invalidInputSearch_2025-36-15 14-36-16.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:35:59 pm</td>
+        <td>
+          📝 Description: To validate error message for invalid locality input
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:35:59 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:16 pm</td>
+        <td>
+          ✅ Test Passed: invalidInputSearch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:16 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: invalidInputSearch</p>
+            <p class="text-sm">
+              <span>2:36:22 pm</span> / <span>00:00:08:385</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: invalidInputSearch</h5>
+<span class='badge badge-success'>09.15.2025 2:36:22 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:36:31 pm</span>
+<span class='badge badge-default'>00:00:08:385</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/invalidInputSearch_2025-36-15 14-36-30.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/invalidInputSearch_2025-36-15 14-36-30.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:22 pm</td>
+        <td>
+          📝 Description: To validate error message for invalid locality input
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:22 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:31 pm</td>
+        <td>
+          ✅ Test Passed: invalidInputSearch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:36:31 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="7"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validSearchWithLocalities</p>
+            <p class="text-sm">
+              <span>2:36:37 pm</span> / <span>00:00:14:322</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">Test Case: validSearchWithLocalities</h5>
+<span class='badge badge-success'>09.15.2025 2:36:37 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:36:51 pm</span>
+<span class='badge badge-default'>00:00:14:322</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-36-15 14-36-51.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-36-15 14-36-51.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:37 pm</td>
+        <td>
+          📝 Description: To validate multi-locality search
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:37 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String[] arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:36:51 pm</td>
+        <td>
+          ⚠️ Test Skipped: validSearchWithLocalities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:36:51 pm</td>
+        <td>
+          Reason: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=140.0.3485.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [44806178ae70d53fe4a4afbf75373230, getElementText {id=f.71B153ACE4B28C09C8BF6338A85F4351.d.44984E0FB974FD766D1844CA51B31E80.e.166}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.66, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51057}, msedge: {msedgedriverVersion: 140.0.3485.66 (bdccd021a49b..., userDataDir: C:\Users\asing207\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51057/devtoo..., se:cdpVersion: 140.0.3485.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (44806178ae70d53fe4a4afbf75373230)] -> xpath: //article[contains(@id,'article')]]
+Session ID: 44806178ae70d53fe4a4afbf75373230
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:36:51 pm</td>
+        <td>
+          Screenshot on skip:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="8"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validSearchWithLocalities</p>
+            <p class="text-sm">
+              <span>2:36:57 pm</span> / <span>00:01:18:855</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">Test Case: validSearchWithLocalities</h5>
+<span class='badge badge-success'>09.15.2025 2:36:57 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:38:16 pm</span>
+<span class='badge badge-default'>00:01:18:855</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-38-15 14-38-16.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-38-15 14-38-16.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:57 pm</td>
+        <td>
+          📝 Description: To validate multi-locality search
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:36:57 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String[] arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:38:16 pm</td>
+        <td>
+          ⚠️ Test Skipped: validSearchWithLocalities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:38:16 pm</td>
+        <td>
+          Reason: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#search"}
+  (Session info: MicrosoftEdge=140.0.3485.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9a21ac051f1c059c22ae34ebc43fb2f2, findElement {using=id, value=search}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.66, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51298}, msedge: {msedgedriverVersion: 140.0.3485.66 (bdccd021a49b..., userDataDir: C:\Users\asing207\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51298/devtoo..., se:cdpVersion: 140.0.3485.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a21ac051f1c059c22ae34ebc43fb2f2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:38:16 pm</td>
+        <td>
+          Screenshot on skip:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validSearchWithLocalities</p>
+            <p class="text-sm">
+              <span>2:38:23 pm</span> / <span>00:00:57:308</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validSearchWithLocalities</h5>
+<span class='badge badge-success'>09.15.2025 2:38:23 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:39:20 pm</span>
+<span class='badge badge-default'>00:00:57:308</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-39-15 14-39-19.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-39-15 14-39-19.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:38:23 pm</td>
+        <td>
+          📝 Description: To validate multi-locality search
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:38:23 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String[] arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:39:20 pm</td>
+        <td>
+          ✅ Test Passed: validSearchWithLocalities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:39:20 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="10"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validSearchWithLocalities</p>
+            <p class="text-sm">
+              <span>2:39:27 pm</span> / <span>00:00:59:427</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">Test Case: validSearchWithLocalities</h5>
+<span class='badge badge-success'>09.15.2025 2:39:27 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:40:26 pm</span>
+<span class='badge badge-default'>00:00:59:427</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-40-15 14-40-26.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-40-15 14-40-26.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:27 pm</td>
+        <td>
+          📝 Description: To validate multi-locality search
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:27 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String[] arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:40:26 pm</td>
+        <td>
+          ⚠️ Test Skipped: validSearchWithLocalities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:40:26 pm</td>
+        <td>
+          Reason: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=140.0.3485.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2f11c5c42e16e7e319f724fbf0b429a1, getElementText {id=f.2E10AFF6F765676306657A20788AB50A.d.E3630FBA76E614BD9430E648165E0657.e.208}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.66, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51839}, msedge: {msedgedriverVersion: 140.0.3485.66 (bdccd021a49b..., userDataDir: C:\Users\asing207\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51839/devtoo..., se:cdpVersion: 140.0.3485.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (2f11c5c42e16e7e319f724fbf0b429a1)] -> xpath: //article[contains(@id,'article')]]
+Session ID: 2f11c5c42e16e7e319f724fbf0b429a1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:40:26 pm</td>
+        <td>
+          Screenshot on skip:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="11"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validSearchWithLocalities</p>
+            <p class="text-sm">
+              <span>2:40:33 pm</span> / <span>00:00:58:198</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">Test Case: validSearchWithLocalities</h5>
+<span class='badge badge-success'>09.15.2025 2:40:33 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:41:31 pm</span>
+<span class='badge badge-default'>00:00:58:198</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-41-15 14-41-31.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-41-15 14-41-31.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:40:33 pm</td>
+        <td>
+          📝 Description: To validate multi-locality search
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:40:33 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String[] arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:41:31 pm</td>
+        <td>
+          ⚠️ Test Skipped: validSearchWithLocalities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:41:31 pm</td>
+        <td>
+          Reason: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=140.0.3485.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b44bc6161bcd606840845ccd0384a572, getElementText {id=f.E7737A08E071AE28F6BDCBDB6314B830.d.DA8A6987EB61BEF79AFD967A39D709F3.e.215}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.66, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52132}, msedge: {msedgedriverVersion: 140.0.3485.66 (bdccd021a49b..., userDataDir: C:\Users\asing207\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52132/devtoo..., se:cdpVersion: 140.0.3485.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (b44bc6161bcd606840845ccd0384a572)] -> xpath: //article[contains(@id,'article')]]
+Session ID: b44bc6161bcd606840845ccd0384a572
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:41:31 pm</td>
+        <td>
+          Screenshot on skip:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validSearchWithLocalities</p>
+            <p class="text-sm">
+              <span>2:41:38 pm</span> / <span>00:00:41:514</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validSearchWithLocalities</h5>
+<span class='badge badge-success'>09.15.2025 2:41:38 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:42:19 pm</span>
+<span class='badge badge-default'>00:00:41:514</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-42-15 14-42-19.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-42-15 14-42-19.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:41:38 pm</td>
+        <td>
+          📝 Description: To validate multi-locality search
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:41:38 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String[] arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:42:19 pm</td>
+        <td>
+          ✅ Test Passed: validSearchWithLocalities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:42:19 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validSearchWithLocalities</p>
+            <p class="text-sm">
+              <span>2:42:26 pm</span> / <span>00:00:26:132</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validSearchWithLocalities</h5>
+<span class='badge badge-success'>09.15.2025 2:42:26 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:42:52 pm</span>
+<span class='badge badge-default'>00:00:26:132</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-42-15 14-42-52.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWithLocalities_2025-42-15 14-42-52.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:42:26 pm</td>
+        <td>
+          📝 Description: To validate multi-locality search
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:42:26 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String[] arg1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:42:52 pm</td>
+        <td>
+          ✅ Test Passed: validSearchWithLocalities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:42:52 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validSearchWith4Localities</p>
+            <p class="text-sm">
+              <span>2:43:00 pm</span> / <span>00:00:19:641</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validSearchWith4Localities</h5>
+<span class='badge badge-success'>09.15.2025 2:43:00 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:43:19 pm</span>
+<span class='badge badge-default'>00:00:19:641</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWith4Localities_2025-43-15 14-43-19.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWith4Localities_2025-43-15 14-43-19.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:00 pm</td>
+        <td>
+          📝 Description: To validate error on adding more than 3 localities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:00 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String arg1, java.lang.String[] arg2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:19 pm</td>
+        <td>
+          ✅ Test Passed: validSearchWith4Localities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:19 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validSearchWith4Localities</p>
+            <p class="text-sm">
+              <span>2:43:26 pm</span> / <span>00:00:19:823</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validSearchWith4Localities</h5>
+<span class='badge badge-success'>09.15.2025 2:43:26 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:43:46 pm</span>
+<span class='badge badge-default'>00:00:19:823</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWith4Localities_2025-43-15 14-43-45.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validSearchWith4Localities_2025-43-15 14-43-45.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:26 pm</td>
+        <td>
+          📝 Description: To validate error on adding more than 3 localities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:26 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, java.lang.String arg1, java.lang.String[] arg2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:46 pm</td>
+        <td>
+          ✅ Test Passed: validSearchWith4Localities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:43:46 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="16"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validFilters</p>
+            <p class="text-sm">
+              <span>2:43:56 pm</span> / <span>00:00:16:666</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">Test Case: validFilters</h5>
+<span class='badge badge-success'>09.15.2025 2:43:56 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:44:12 pm</span>
+<span class='badge badge-default'>00:00:16:666</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-44-15 14-44-12.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-44-15 14-44-12.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:56 pm</td>
+        <td>
+          📝 Description: To validate filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:43:56 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:44:12 pm</td>
+        <td>
+          ⚠️ Test Skipped: validFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:44:12 pm</td>
+        <td>
+          Reason: java.lang.NumberFormatException: For input string: "500000s"
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:44:12 pm</td>
+        <td>
+          Screenshot on skip:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validFilters</p>
+            <p class="text-sm">
+              <span>2:44:19 pm</span> / <span>00:01:19:521</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validFilters</h5>
+<span class='badge badge-success'>09.15.2025 2:44:19 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:45:39 pm</span>
+<span class='badge badge-default'>00:01:19:521</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-45-15 14-45-38.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-45-15 14-45-38.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:44:19 pm</td>
+        <td>
+          📝 Description: To validate filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:44:19 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:45:39 pm</td>
+        <td>
+          ✅ Test Passed: validFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:45:39 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validFilters</p>
+            <p class="text-sm">
+              <span>2:45:46 pm</span> / <span>00:01:36:433</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validFilters</h5>
+<span class='badge badge-success'>09.15.2025 2:45:46 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:47:22 pm</span>
+<span class='badge badge-default'>00:01:36:433</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-47-15 14-47-22.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-47-15 14-47-22.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:45:46 pm</td>
+        <td>
+          📝 Description: To validate filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:45:46 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:47:22 pm</td>
+        <td>
+          ✅ Test Passed: validFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:47:22 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="19"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validFilters</p>
+            <p class="text-sm">
+              <span>2:47:29 pm</span> / <span>00:01:17:835</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">Test Case: validFilters</h5>
+<span class='badge badge-success'>09.15.2025 2:47:29 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:48:47 pm</span>
+<span class='badge badge-default'>00:01:17:835</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-48-15 14-48-47.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-48-15 14-48-47.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:29 pm</td>
+        <td>
+          📝 Description: To validate filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:47:29 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:48:47 pm</td>
+        <td>
+          ⚠️ Test Skipped: validFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:48:47 pm</td>
+        <td>
+          Reason: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'BHK Type')]/following::div[1]/div[contains(text(),'2 BHK')]"}
+  (Session info: MicrosoftEdge=140.0.3485.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6c7e1c792df16dbadc7f2bf0bf1081a, findElement {using=xpath, value=//div[contains(text(),'BHK Type')]/following::div[1]/div[contains(text(),'2 BHK')]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.66, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55410}, msedge: {msedgedriverVersion: 140.0.3485.66 (bdccd021a49b..., userDataDir: C:\Users\asing207\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55410/devtoo..., se:cdpVersion: 140.0.3485.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6c7e1c792df16dbadc7f2bf0bf1081a
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:48:47 pm</td>
+        <td>
+          Screenshot on skip:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="20"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validFilters</p>
+            <p class="text-sm">
+              <span>2:48:54 pm</span> / <span>00:01:16:625</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">Test Case: validFilters</h5>
+<span class='badge badge-success'>09.15.2025 2:48:54 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:50:10 pm</span>
+<span class='badge badge-default'>00:01:16:625</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-50-15 14-50-10.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-50-15 14-50-10.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:54 pm</td>
+        <td>
+          📝 Description: To validate filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:48:54 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:50:10 pm</td>
+        <td>
+          ⚠️ Test Skipped: validFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:50:10 pm</td>
+        <td>
+          Reason: java.lang.AssertionError: [TestCase 5] Expected: All filters should be applied and validated on the first property card. Actual: Validation failed for: 2 BHK, 10000, 100000, 30Days, family, apartment, Semi, 2-wheeler expected [true] but found [false]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:50:10 pm</td>
+        <td>
+          Screenshot on skip:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validFilters</p>
+            <p class="text-sm">
+              <span>2:50:17 pm</span> / <span>00:01:33:283</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validFilters</h5>
+<span class='badge badge-success'>09.15.2025 2:50:17 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:51:50 pm</span>
+<span class='badge badge-default'>00:01:33:283</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-51-15 14-51-50.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-51-15 14-51-50.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:17 pm</td>
+        <td>
+          📝 Description: To validate filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:50:17 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:51:50 pm</td>
+        <td>
+          ✅ Test Passed: validFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:51:50 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validFilters</p>
+            <p class="text-sm">
+              <span>2:51:57 pm</span> / <span>00:01:57:043</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validFilters</h5>
+<span class='badge badge-success'>09.15.2025 2:51:57 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:53:54 pm</span>
+<span class='badge badge-default'>00:01:57:043</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-53-15 14-53-54.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-53-15 14-53-54.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:51:57 pm</td>
+        <td>
+          📝 Description: To validate filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:51:57 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:54 pm</td>
+        <td>
+          ✅ Test Passed: validFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:53:54 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: validFilters</p>
+            <p class="text-sm">
+              <span>2:54:01 pm</span> / <span>00:01:16:046</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: validFilters</h5>
+<span class='badge badge-success'>09.15.2025 2:54:01 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:55:17 pm</span>
+<span class='badge badge-default'>00:01:16:046</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-55-15 14-55-17.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/validFilters_2025-55-15 14-55-17.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:54:01 pm</td>
+        <td>
+          📝 Description: To validate filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:54:01 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:55:17 pm</td>
+        <td>
+          ✅ Test Passed: validFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:55:17 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: resetFilters</p>
+            <p class="text-sm">
+              <span>2:55:24 pm</span> / <span>00:01:36:577</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: resetFilters</h5>
+<span class='badge badge-success'>09.15.2025 2:55:24 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:57:00 pm</span>
+<span class='badge badge-default'>00:01:36:577</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/resetFilters_2025-57-15 14-57-00.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/resetFilters_2025-57-15 14-57-00.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:55:24 pm</td>
+        <td>
+          📝 Description: To validate reset filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:55:24 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:57:00 pm</td>
+        <td>
+          ✅ Test Passed: resetFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:57:00 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: resetFilters</p>
+            <p class="text-sm">
+              <span>2:57:07 pm</span> / <span>00:01:46:657</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: resetFilters</h5>
+<span class='badge badge-success'>09.15.2025 2:57:07 pm</span>
+<span class='badge badge-danger'>09.15.2025 2:58:54 pm</span>
+<span class='badge badge-default'>00:01:46:657</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/resetFilters_2025-58-15 14-58-53.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/resetFilters_2025-58-15 14-58-53.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:57:07 pm</td>
+        <td>
+          📝 Description: To validate reset filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:57:07 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:58:54 pm</td>
+        <td>
+          ✅ Test Passed: resetFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:58:54 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: resetFilters</p>
+            <p class="text-sm">
+              <span>2:59:01 pm</span> / <span>00:01:35:894</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: resetFilters</h5>
+<span class='badge badge-success'>09.15.2025 2:59:01 pm</span>
+<span class='badge badge-danger'>09.15.2025 3:00:37 pm</span>
+<span class='badge badge-default'>00:01:35:894</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/resetFilters_2025-00-15 15-00-37.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/resetFilters_2025-00-15 15-00-37.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:59:01 pm</td>
+        <td>
+          📝 Description: To validate reset filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:59:01 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:00:37 pm</td>
+        <td>
+          ✅ Test Passed: resetFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:00:37 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: resetFilters</p>
+            <p class="text-sm">
+              <span>3:00:44 pm</span> / <span>00:01:24:222</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: resetFilters</h5>
+<span class='badge badge-success'>09.15.2025 3:00:44 pm</span>
+<span class='badge badge-danger'>09.15.2025 3:02:08 pm</span>
+<span class='badge badge-default'>00:01:24:222</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/resetFilters_2025-02-15 15-02-07.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/resetFilters_2025-02-15 15-02-07.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:00:44 pm</td>
+        <td>
+          📝 Description: To validate reset filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:00:44 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:02:08 pm</td>
+        <td>
+          ✅ Test Passed: resetFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:02:08 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: resetFilters</p>
+            <p class="text-sm">
+              <span>3:02:15 pm</span> / <span>00:01:19:073</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: resetFilters</h5>
+<span class='badge badge-success'>09.15.2025 3:02:15 pm</span>
+<span class='badge badge-danger'>09.15.2025 3:03:34 pm</span>
+<span class='badge badge-default'>00:01:19:073</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/resetFilters_2025-03-15 15-03-33.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/resetFilters_2025-03-15 15-03-33.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:02:15 pm</td>
+        <td>
+          📝 Description: To validate reset filter functionality
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:02:15 pm</td>
+        <td>
+          🔧 Actual Parameters Passed: java.lang.String arg0, int arg1, int arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:03:34 pm</td>
+        <td>
+          ✅ Test Passed: resetFilters
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:03:34 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: getOwnerDetailsWithoutLogin</p>
+            <p class="text-sm">
+              <span>3:03:41 pm</span> / <span>00:02:44:157</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: getOwnerDetailsWithoutLogin</h5>
+<span class='badge badge-success'>09.15.2025 3:03:41 pm</span>
+<span class='badge badge-danger'>09.15.2025 3:06:25 pm</span>
+<span class='badge badge-default'>00:02:44:157</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/getOwnerDetailsWithoutLogin_2025-06-15 15-06-24.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/getOwnerDetailsWithoutLogin_2025-06-15 15-06-24.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:03:41 pm</td>
+        <td>
+          📝 Description: To validate owner details popup without login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:06:25 pm</td>
+        <td>
+          ✅ Test Passed: getOwnerDetailsWithoutLogin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:06:25 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: getOwnerDetailsWithLogin</p>
+            <p class="text-sm">
+              <span>3:06:31 pm</span> / <span>00:02:25:419</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: getOwnerDetailsWithLogin</h5>
+<span class='badge badge-success'>09.15.2025 3:06:31 pm</span>
+<span class='badge badge-danger'>09.15.2025 3:08:57 pm</span>
+<span class='badge badge-default'>00:02:25:419</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/getOwnerDetailsWithLogin_2025-08-15 15-08-57.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/getOwnerDetailsWithLogin_2025-08-15 15-08-57.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:06:31 pm</td>
+        <td>
+          📝 Description: To validate owner details after login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:08:57 pm</td>
+        <td>
+          ✅ Test Passed: getOwnerDetailsWithLogin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:08:57 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author="AnuragSingh"
+          tag="WebUITest"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Case: sortProperties</p>
+            <p class="text-sm">
+              <span>3:09:04 pm</span> / <span>00:00:55:618</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Case: sortProperties</h5>
+<span class='badge badge-success'>09.15.2025 3:09:04 pm</span>
+<span class='badge badge-danger'>09.15.2025 3:10:00 pm</span>
+<span class='badge badge-default'>00:00:55:618</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AnuragSingh</span>
+<span class="badge badge-pill badge-default">WebUITest</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/sortProperties_2025-10-15 15-10-00.png' src="C:\Users\asing207\eclipse-workspace_new\nobroker/target/Screenshots/sortProperties_2025-10-15 15-10-00.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:09:04 pm</td>
+        <td>
+          📝 Description: To validate property sorting by price
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:10:00 pm</td>
+        <td>
+          ✅ Test Passed: sortProperties
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:10:00 pm</td>
+        <td>
+          Screenshot on success:
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>24</span>
+<span class='badge log badge-skip'>7</span>
+</span>
+<p class="name">WebUITest</p>
+<p class="duration text-sm">31 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>WebUITest</h4>
+<span status="pass" class='badge log pass-bg'>24 passed</span>
+<span status="skip" class='badge log badge-skip'>7 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:33:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Test Case: validInputTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:34:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Test Case: validInputTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:35:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Test Case: validInputTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:35:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Test Case: invalidInputSearch</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:35:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Test Case: invalidInputSearch</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:36:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>Test Case: invalidInputSearch</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:36:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:36:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:38:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:39:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:40:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:41:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:42:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>Test Case: validSearchWith4Localities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>Test Case: validSearchWith4Localities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:43:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:44:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:45:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:47:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:48:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:50:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:51:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>Test Case: resetFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:57:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>Test Case: resetFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>Test Case: resetFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>Test Case: resetFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>Test Case: resetFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:03:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>Test Case: getOwnerDetailsWithoutLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:06:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>Test Case: getOwnerDetailsWithLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:09:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>Test Case: sortProperties</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>24</span>
+<span class='badge log badge-skip'>7</span>
+</span>
+<p class="name">AnuragSingh</p>
+<p class="duration text-sm">31 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>AnuragSingh</h4>
+<span status="pass" class='badge log pass-bg'>24 passed</span>
+<span status="skip" class='badge log badge-skip'>7 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:33:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Test Case: validInputTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:34:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Test Case: validInputTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:35:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Test Case: validInputTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:35:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Test Case: invalidInputSearch</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:35:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Test Case: invalidInputSearch</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:36:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>Test Case: invalidInputSearch</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:36:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:36:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:38:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:39:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:40:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:41:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:42:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>Test Case: validSearchWithLocalities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>Test Case: validSearchWith4Localities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:43:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>Test Case: validSearchWith4Localities</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:43:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:44:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:45:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:47:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:48:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:50:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:51:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>Test Case: validFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>Test Case: resetFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:57:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>Test Case: resetFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>Test Case: resetFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>Test Case: resetFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>Test Case: resetFilters</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:03:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>Test Case: getOwnerDetailsWithoutLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:06:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>Test Case: getOwnerDetailsWithLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:09:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>Test Case: sortProperties</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sept 15, 2025 02:33:44 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sept 15, 2025 03:10:02 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>24</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='77%'>
+<b>24</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>7</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='37%'><b>48</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>80</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Test Case: validInputTest":54.26,"Test Case: validInputTest":19.026,"Test Case: validInputTest":10.443,"Test Case: invalidInputSearch":19.495,"Test Case: invalidInputSearch":16.929,"Test Case: invalidInputSearch":8.385,"Test Case: validSearchWithLocalities":14.322,"Test Case: validSearchWithLocalities":78.855,"Test Case: validSearchWithLocalities":57.308,"Test Case: validSearchWithLocalities":59.427,"Test Case: validSearchWithLocalities":58.198,"Test Case: validSearchWithLocalities":41.514,"Test Case: validSearchWithLocalities":26.132,"Test Case: validSearchWith4Localities":19.641,"Test Case: validSearchWith4Localities":19.823,"Test Case: validFilters":16.666,"Test Case: validFilters":79.521,"Test Case: validFilters":96.433,"Test Case: validFilters":77.835,"Test Case: validFilters":76.625,"Test Case: validFilters":93.283,"Test Case: validFilters":117.043,"Test Case: validFilters":76.046,"Test Case: resetFilters":96.577,"Test Case: resetFilters":106.657,"Test Case: resetFilters":95.894,"Test Case: resetFilters":84.222,"Test Case: resetFilters":79.073,"Test Case: getOwnerDetailsWithoutLogin":164.157,"Test Case: getOwnerDetailsWithLogin":145.419,"Test Case: sortProperties":55.618
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>AnuragSingh</td>
+<td>24</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>77.419%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>WebUITest</td>
+<td>24</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>77.419%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Browser</td>
+<td>Not initialized</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>Tester</td>
+<td>Anurag Singh</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 24,
+failParent: 0,
+warningParent: 0,
+skipParent: 7,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 48,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 21,
+infoEvents: 59
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

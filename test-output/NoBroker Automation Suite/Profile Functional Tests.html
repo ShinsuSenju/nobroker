@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>TestNG:  Profile Functional Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Profile Functional Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 16 03:23:14 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>525 seconds (525186 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 1 BHK, 7000, 100000, 30Days, bachelor_female, apartment, Full, 2-wheeler</td>
+<td></td>
+<td>17</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validSearchWithLocalities()'><b>validSearchWithLocalities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate multi-locality search<br>Parameters: Pune, [Ljava.lang.String;@5974b233</td>
+<td></td>
+<td>32</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.invalidInputSearch()'><b>invalidInputSearch</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error message for invalid locality input<br>Parameters: Bangalore, thane mumbai</td>
+<td></td>
+<td>3</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.resetFilters()'><b>resetFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate reset filter functionality<br>Parameters: 1 RK, 5000, 100000, Immediate, bachelor_male, apartment, Full, 2-wheeler</td>
+<td></td>
+<td>21</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 3 BHK, 15000, 100000, Immediate, family, apartment, Full, 4-wheeler</td>
+<td></td>
+<td>25</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validSearchWith4Localities()'><b>validSearchWith4Localities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error on adding more than 3 localities<br>Parameters: Mumbai, airoli, [Ljava.lang.String;@79957f11</td>
+<td></td>
+<td>11</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.sortProperties()'><b>sortProperties</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate property sorting by price</td>
+<td></td>
+<td>6</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validSearchWithLocalities()'><b>validSearchWithLocalities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate multi-locality search<br>Parameters: Mumbai, [Ljava.lang.String;@72976b4</td>
+<td></td>
+<td>8</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validSearchWith4Localities()'><b>validSearchWith4Localities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error on adding more than 3 localities<br>Parameters: Delhi, palam, [Ljava.lang.String;@48e41b5d</td>
+<td></td>
+<td>12</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validInputTest()'><b>validInputTest</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate search with valid input<br>Parameters: Mumbai, airoli</td>
+<td></td>
+<td>4</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.resetFilters()'><b>resetFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate reset filter functionality<br>Parameters: 4 BHK, 30000, 100000, 30Days, company, gc, Full, 4-wheeler</td>
+<td></td>
+<td>32</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.resetFilters()'><b>resetFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate reset filter functionality<br>Parameters: 1 BHK, 7000, 100000, 30Days, bachelor_female, apartment, Full, 2-wheeler</td>
+<td></td>
+<td>22</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.invalidInputSearch()'><b>invalidInputSearch</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error message for invalid locality input<br>Parameters: Pune, Mumbai airoli</td>
+<td></td>
+<td>12</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 4 BHK, 30000, 100000, 30Days, company, gc, Full, 4-wheeler</td>
+<td></td>
+<td>29</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validInputTest()'><b>validInputTest</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate search with valid input<br>Parameters: Bangalore, hsr layout</td>
+<td></td>
+<td>4</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validSearchWithLocalities()'><b>validSearchWithLocalities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate multi-locality search<br>Parameters: Mumbai, [Ljava.lang.String;@4fd05028</td>
+<td></td>
+<td>7</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 1 RK, 5000, 100000, Immediate, bachelor_male, apartment, Full, 2-wheeler</td>
+<td></td>
+<td>16</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.resetFilters()'><b>resetFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate reset filter functionality<br>Parameters: 2 BHK, 10000, 100000, 30Days, family, apartment, Semi, 2-wheeler</td>
+<td></td>
+<td>29</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.getOwnerDetailsWithoutLogin()'><b>getOwnerDetailsWithoutLogin</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate owner details popup without login</td>
+<td></td>
+<td>7</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.getOwnerDetailsWithLogin()'><b>getOwnerDetailsWithLogin</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate owner details after login</td>
+<td></td>
+<td>35</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.resetFilters()'><b>resetFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate reset filter functionality<br>Parameters: 3 BHK, 15000, 100000, Immediate, family, apartment, Full, 4-wheeler</td>
+<td></td>
+<td>27</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validInputTest()'><b>validInputTest</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate search with valid input<br>Parameters: Pune, baner</td>
+<td></td>
+<td>14</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.invalidInputSearch()'><b>invalidInputSearch</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error message for invalid locality input<br>Parameters: Mumbai, bangalore adfa delhi</td>
+<td></td>
+<td>12</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 2 BHK, 10000, 100000, 30Days, family, apartment, Semi, 2-wheeler</td>
+<td></td>
+<td>23</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+</table><p>
+</body>
+</html>

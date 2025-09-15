@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+    <listener class-name="com.nobroker.listeners.TestListener" />
+    <listener class-name="com.nobroker.listeners.SuiteListener" />
+    <listener class-name="com.nobroker.listeners.MethodListener" />
+    <listener class-name="com.nobroker.listeners.ExecutionListener" />
+    </listeners>
+  <test name="Profile Functional Tests">
+    <!-- Browser and test data parameters -->
+    <parameter name="Browser" value="edge" />
+    <parameter name="city" value="Mumbai" />
+    <parameter name="locality1" value="airoli" />
+    <parameter name="locality2" value="rabale" />
+    <parameter name="locality3" value="ghansoli" />
+
+    <classes>
+      <class name="com.nobroker.test.Profile">
+        <methods>
+          <!-- Uncomment to run all or specific test cases -->
+         
+          <include name="validSearchWith4Localities" />
+         
+        </methods>
+      </class>
+    </classes>
+    </test>
+</suite> <!-- Suite -->
