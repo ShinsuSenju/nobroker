@@ -1,6 +1,9 @@
 package com.nobroker.utils;
 
 import java.lang.reflect.Method;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import com.nobroker.setup.BaseSteps;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -22,41 +25,20 @@ public class ExtentManager {
      * Initializes and configures the Extent report.
      */
     public void reportGeneration() {
-        sparkReport = new ExtentSparkReporter("target/Reports/TestReport.html");
+    	 String timeStamp = new SimpleDateFormat("yyyy-mm-dd HH-mm-ss").format(new Date());
+        sparkReport = new ExtentSparkReporter("target/Reports/TestReport_"+timeStamp+".html");
         sparkReport.config().setTheme(Theme.DARK);
         sparkReport.config().setDocumentTitle("NoBroker Automation Report");
         sparkReport.config().setReportName("Functional Testing - Web UI");
-
         extent = new ExtentReports();
         extent.attachReporter(sparkReport);
-
-        // Static system info
-        if (driver != null) {
-            String browserName = driver.getClass().getSimpleName().toLowerCase();
-
-            if (browserName.contains("chrome")) {
-                extent.setSystemInfo("Browser", "Chrome");
-            } else if (browserName.contains("firefox")) {
-                extent.setSystemInfo("Browser", "Firefox");
-            } else if (browserName.contains("edge")) {
-                extent.setSystemInfo("Browser", "Edge");
-            } else {
-                extent.setSystemInfo("Browser", "Unknown (" + browserName + ")");
-            }
-        } else {
-            extent.setSystemInfo("Browser", "Not initialized");
-        }
-
         extent.setSystemInfo("Environment", "QA");
         extent.setSystemInfo("Tester", "Anurag Singh");
     }
 
-    /**
-     * Creates a test entry in the report using the method name and description.
-     */
 
     /**
-     * Creates a test entry in the report using the method name, description, and actual parameter values.
+     * Creates a test entry in the report using the method name, description
      */
     public void reportCreation(Method method) {
         String description = "";
@@ -70,9 +52,7 @@ public class ExtentManager {
 
         if (!description.isEmpty()) {
             test.log(Status.INFO, " Description: " + description);
-        }
-
-       
+        }      
     }
 
 
@@ -108,13 +88,6 @@ public class ExtentManager {
             default:
                 test.log(Status.INFO, "ℹ️ Test status unknown for: " + methodName);
         }
-    }
-
-    /**
-     * Cleans up resources after test execution.
-     */
-    public void cleanUp() {
-        BaseSteps.tearDown();
     }
 
     /**

@@ -20,7 +20,7 @@
         <methods>
           <!-- Uncomment to run all or specific test cases -->
          
-          <include name="validSearchWith4Localities" />
+          <include name="resetFilters" />
          
         </methods>
       </class>

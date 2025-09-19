@@ -15,19 +15,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-/**
- * Page Object Model for the Property Listing Page on NoBroker.
- */
+import com.nobroker.parameter.PropertyReader;
+
+
+ // Page Object Model for the Property Listing Page on NoBroker.
+ 
 public class PropertyListPage extends BasePage {
 
     // ===================== Constants =====================
-    private static final String XPATH_BHK_TYPE = "//div[contains(text(),'BHK Type')]/following::div[1]/div[contains(text(),'%s')]";
-    private static final String XPATH_AVAILABILITY = "//div[contains(text(),'Availability')]/following::div[1]/label[contains(@for,'%s')]";
-    private static final String XPATH_PREFERRED_TENANTS = "//div[contains(text(),'Preferred Tenants')]/following::label[contains(@for,'%s')]";
-    private static final String XPATH_PROPERTY_TYPE = "//div[contains(text(),'Property Type')]/following::label[contains(@for,'%s')]";
-    private static final String XPATH_FURNISHING = "//div[contains(text(),'Furnishing')]/following::label[contains(@for,'%s')]";
-    private static final String XPATH_PARKING = "//div[contains(text(),'Parking')]/following::label[contains(@for,'%s')]";
-    private static final String XPATH_PROPERTY_CARDS = "//article[contains(@id,'article')]";
+	private static final String XPATH_BHK_TYPE = PropertyReader.getDataFromPropertyFile("bhk");
+	private static final String XPATH_AVAILABILITY = PropertyReader.getDataFromPropertyFile("availability");
+	private static final String XPATH_PREFERRED_TENANTS = PropertyReader.getDataFromPropertyFile("preferredTenants");
+	private static final String XPATH_PROPERTY_TYPE = PropertyReader.getDataFromPropertyFile("propertyType");
+	private static final String XPATH_FURNISHING = PropertyReader.getDataFromPropertyFile("furnishing");
+	private static final String XPATH_PARKING = PropertyReader.getDataFromPropertyFile("parking");
+	private static final String XPATH_PROPERTY_CARDS = PropertyReader.getDataFromPropertyFile("propertyCards");
 
     // ===================== Search Section =====================
     @FindBy(id = "loc")
@@ -96,7 +98,7 @@ public class PropertyListPage extends BasePage {
 
     // Enters a locality in the search input
     public void enterLocality(String area) {
-        if (area == null || area.trim().isEmpty()) return;
+//        if (area == null || area.trim().isEmpty()) return;
         action = new Actions(driver);
         waitUntilVisibility(localityInput, 2);
         action.click(localityInput).perform();
@@ -107,7 +109,7 @@ public class PropertyListPage extends BasePage {
     // Selects the first suggestion from the dropdown
     public void selectLocality() {
         try {
-            waitUntilClick(selectArea, 10);
+            waitUntilClick(selectArea, 5);
             action.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
         } catch (Exception e) {
             // Ignore if dropdown doesn't appear
@@ -188,8 +190,8 @@ public class PropertyListPage extends BasePage {
 
     // Checks if the availability date matches the selected filter (Immediate, Within 15/30 days, etc.)
     public boolean isAvailabilityMatching(String dateStr, String selectedFilter) {
-//    	System.out.println(selectedFilter);
-        // Handle "Ready to Move" as immediate availability
+        // System.out.println(selectedFilter);
+        // Handle "Ready to Move" 
         if (dateStr.equalsIgnoreCase("Ready to Move")) {
             return selectedFilter.equalsIgnoreCase("Immediate") || selectedFilter.equalsIgnoreCase("30Days") || selectedFilter.equalsIgnoreCase("15Days") || selectedFilter.equalsIgnoreCase("30Plus") ;
         }
@@ -198,12 +200,10 @@ public class PropertyListPage extends BasePage {
         LocalDate today = LocalDate.now();
 
         switch (selectedFilter.toLowerCase()) {
-            case "immediate":
-                return listingDate.isEqual(today);
             case "within 15 days":
-                return !listingDate.isBefore(today) && !listingDate.isAfter(today.plusDays(15));
+                return !listingDate.isAfter(today.plusDays(15));
             case "within 30 days":
-                return !listingDate.isBefore(today) && !listingDate.isAfter(today.plusDays(30));
+                return !listingDate.isAfter(today.plusDays(30));
             case "after 30 days":
                 return listingDate.isAfter(today.plusDays(30));
             default:
@@ -356,13 +356,13 @@ public class PropertyListPage extends BasePage {
     	waitUntilVisibility(sortByPriceLow, 5);
     	sortByPriceLow.click();
     	waitUntilLoad(XPATH_PROPERTY_CARDS, 5);
-    	
+
     }
     
     // Validates that the property list is sorted by price (low to high)
     public boolean validateSort() throws InterruptedException {
     	waitUntilLoad(XPATH_PROPERTY_CARDS, 5);
-  
+       
         List<WebElement> cards = driver.findElements(By.id("minimumRent"));
         List<Integer> propertiesRentInOrder = new ArrayList<>();
 

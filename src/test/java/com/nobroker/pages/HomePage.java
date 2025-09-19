@@ -20,7 +20,7 @@ public class HomePage extends BasePage {
 	@FindBy(id="signUp-phoneNumber")
 	WebElement phoneNoInput;
 	
-	@FindBy(xpath = "//div[@id='app']/div/div/div[2]/div[3]/div[2]")
+	@FindBy(xpath = "//div[@id='app']/descendant::div[text()='Rent']")
 	WebElement rentBtn;
 
 	@FindBy(css = "div.prop-search-city-selector ~ button ")
@@ -53,7 +53,7 @@ public class HomePage extends BasePage {
 		rentBtn.click();
 	}
 
-	// Selects a city from the dropdown
+
 	// Selects a city from the dropdown
 	public void selectCity(String city) {
 		String cityXpath = String.format(CITY_XPATH, city);
@@ -65,7 +65,7 @@ public class HomePage extends BasePage {
 
 	// Enters the area/locality in the input box
 	public void enterArea(String area) {
-		if (area == null || area.trim().isEmpty()) return;
+//		if (area == null || area.trim().isEmpty()) return;
 		action = new Actions(driver);
 		action.click(inputLocal).perform();
 		inputLocal.sendKeys(area);
@@ -82,8 +82,13 @@ public class HomePage extends BasePage {
 	}
 
 	// Clicks the Search button
-	public void clickSearch() throws InterruptedException {
-		Thread.sleep(1000);
+	public void clickSearch() {
+		try {
+			
+			Thread.sleep(1000);
+		}catch(Exception e) {
+			e.getMessage();
+		}
 		searchBtn.click();
 	}
 }

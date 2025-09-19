@@ -53,7 +53,7 @@ public class Profile {
         }
         extentManager.driver = driver;
         extentManager.reportCreation(method);
-        driver.get(PropertyReader.getDataFromPropertyFile("url"));
+        driver.get("https://www.nobroker");
     }
 
     @AfterMethod(alwaysRun = true)
@@ -184,7 +184,7 @@ public class Profile {
      * Reviewed By: SME
      * Motive: To validate reset filter functionality
      */
-    @Test(priority = 5, dataProvider = "filterDataProvider", dataProviderClass = ExcelReader.class, description = "To validate reset filter functionality", dependsOnMethods = "validFilters")
+    @Test(priority = 5, dataProvider = "resetFilterDataProvider", dataProviderClass = ExcelReader.class, description = "To validate reset filter functionality")
     public void resetFilters(String bhk, int minPrice, int maxPrice, String availability, String tenant, String propertyType, String furnishing, String parking) throws InterruptedException {
         String[] localities = {locality1,locality2,locality3};
         performSearch(city, localities[0]);
@@ -223,7 +223,7 @@ public class Profile {
      * Reviewed By: SME
      * Motive: To validate owner details after login
      */
-    @Test(priority = 7, dependsOnMethods = "getOwnerDetailsWithoutLogin", description = "To validate owner details after login")
+    @Test(priority = 7, description = "To validate owner details after login")
     public void getOwnerDetailsWithLogin() throws InterruptedException {
         String[] localities = {locality1,locality2,locality3};
         homePage = new HomePage(driver);

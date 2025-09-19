@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Profile Functional Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 16 03:23:14 IST 2025</td>
+<td>Started on:</td><td>Tue Sep 16 04:56:10 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>525 seconds (525186 ms)</td>
+<tr><td>Total time:</td><td>435 seconds (435156 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,47 +76,67 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 1 BHK, 7000, 100000, 30Days, bachelor_female, apartment, Full, 2-wheeler</td>
+<td title='com.nobroker.test.Profile.validInputTest()'><b>validInputTest</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate search with valid input<br>Parameters: Pune, baner</td>
 <td></td>
-<td>17</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.validSearchWithLocalities()'><b>validSearchWithLocalities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate multi-locality search<br>Parameters: Pune, [Ljava.lang.String;@5974b233</td>
-<td></td>
-<td>32</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.invalidInputSearch()'><b>invalidInputSearch</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error message for invalid locality input<br>Parameters: Bangalore, thane mumbai</td>
-<td></td>
-<td>3</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.resetFilters()'><b>resetFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate reset filter functionality<br>Parameters: 1 RK, 5000, 100000, Immediate, bachelor_male, apartment, Full, 2-wheeler</td>
-<td></td>
-<td>21</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 3 BHK, 15000, 100000, Immediate, family, apartment, Full, 4-wheeler</td>
-<td></td>
-<td>25</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.validSearchWith4Localities()'><b>validSearchWith4Localities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error on adding more than 3 localities<br>Parameters: Mumbai, airoli, [Ljava.lang.String;@79957f11</td>
-<td></td>
-<td>11</td>
+<td>13</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
 <tr>
 <td title='com.nobroker.test.Profile.sortProperties()'><b>sortProperties</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate property sorting by price</td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
 <tr>
-<td title='com.nobroker.test.Profile.validSearchWithLocalities()'><b>validSearchWithLocalities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate multi-locality search<br>Parameters: Mumbai, [Ljava.lang.String;@72976b4</td>
+<td title='com.nobroker.test.Profile.validSearchWithLocalities()'><b>validSearchWithLocalities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate multi-locality search<br>Parameters: Mumbai, [Ljava.lang.String;@7d986d83</td>
 <td></td>
 <td>8</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
 <tr>
-<td title='com.nobroker.test.Profile.validSearchWith4Localities()'><b>validSearchWith4Localities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error on adding more than 3 localities<br>Parameters: Delhi, palam, [Ljava.lang.String;@48e41b5d</td>
+<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 3 BHK, 15000, 100000, Immediate, family, apartment, Full, 4-wheeler</td>
+<td></td>
+<td>22</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validSearchWith4Localities()'><b>validSearchWith4Localities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error on adding more than 3 localities<br>Parameters: Delhi, palam, [Ljava.lang.String;@2365ea38</td>
+<td></td>
+<td>11</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.getOwnerDetailsWithLogin()'><b>getOwnerDetailsWithLogin</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate owner details after login</td>
+<td></td>
+<td>31</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.invalidInputSearch()'><b>invalidInputSearch</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error message for invalid locality input<br>Parameters: Bangalore, thane mumbai</td>
+<td></td>
+<td>2</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validSearchWithLocalities()'><b>validSearchWithLocalities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate multi-locality search<br>Parameters: Pune, [Ljava.lang.String;@61ffd148</td>
+<td></td>
+<td>17</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 4 BHK, 30000, 100000, 30Days, company, gc, Full, 4-wheeler</td>
+<td></td>
+<td>27</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 2 BHK, 10000, 100000, 30Days, family, apartment, Semi, 2-wheeler</td>
+<td></td>
+<td>24</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.validInputTest()'><b>validInputTest</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate search with valid input<br>Parameters: Bangalore, hsr layout</td>
+<td></td>
+<td>4</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.invalidInputSearch()'><b>invalidInputSearch</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error message for invalid locality input<br>Parameters: Mumbai, bangalore adfa delhi</td>
+<td></td>
+<td>12</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+<tr>
+<td title='com.nobroker.test.Profile.invalidInputSearch()'><b>invalidInputSearch</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error message for invalid locality input<br>Parameters: Pune, Mumbai airoli</td>
 <td></td>
 <td>12</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
@@ -126,74 +146,211 @@ function toggleAllBoxes() {
 <td>4</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
 <tr>
-<td title='com.nobroker.test.Profile.resetFilters()'><b>resetFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate reset filter functionality<br>Parameters: 4 BHK, 30000, 100000, 30Days, company, gc, Full, 4-wheeler</td>
+<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 1 RK, 5000, 100000, Immediate, bachelor_male, apartment, Full, 2-wheeler</td>
 <td></td>
-<td>32</td>
+<td>15</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
 <tr>
-<td title='com.nobroker.test.Profile.resetFilters()'><b>resetFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate reset filter functionality<br>Parameters: 1 BHK, 7000, 100000, 30Days, bachelor_female, apartment, Full, 2-wheeler</td>
+<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 1 BHK, 7000, 100000, 30Days, bachelor_female, apartment, Full, 2-wheeler</td>
 <td></td>
-<td>22</td>
+<td>17</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
 <tr>
-<td title='com.nobroker.test.Profile.invalidInputSearch()'><b>invalidInputSearch</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error message for invalid locality input<br>Parameters: Pune, Mumbai airoli</td>
-<td></td>
-<td>12</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 4 BHK, 30000, 100000, 30Days, company, gc, Full, 4-wheeler</td>
-<td></td>
-<td>29</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.validInputTest()'><b>validInputTest</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate search with valid input<br>Parameters: Bangalore, hsr layout</td>
-<td></td>
-<td>4</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.validSearchWithLocalities()'><b>validSearchWithLocalities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate multi-locality search<br>Parameters: Mumbai, [Ljava.lang.String;@4fd05028</td>
+<td title='com.nobroker.test.Profile.validSearchWithLocalities()'><b>validSearchWithLocalities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate multi-locality search<br>Parameters: Mumbai, [Ljava.lang.String;@439e3cb4</td>
 <td></td>
 <td>7</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
 <tr>
-<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 1 RK, 5000, 100000, Immediate, bachelor_male, apartment, Full, 2-wheeler</td>
+<td title='com.nobroker.test.Profile.validSearchWith4Localities()'><b>validSearchWith4Localities</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error on adding more than 3 localities<br>Parameters: Mumbai, airoli, [Ljava.lang.String;@35cec305</td>
 <td></td>
-<td>16</td>
+<td>11</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
 <tr>
-<td title='com.nobroker.test.Profile.resetFilters()'><b>resetFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate reset filter functionality<br>Parameters: 2 BHK, 10000, 100000, 30Days, family, apartment, Semi, 2-wheeler</td>
+<td title='com.nobroker.test.Profile.resetFilters()'><b>resetFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate reset filter functionality<br>Parameters: 4 BHK, 30000, 100000, 30Days, company, gc, Full, 4-wheeler</td>
 <td></td>
-<td>29</td>
+<td>31</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
 <tr>
 <td title='com.nobroker.test.Profile.getOwnerDetailsWithoutLogin()'><b>getOwnerDetailsWithoutLogin</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate owner details popup without login</td>
 <td></td>
-<td>7</td>
+<td>6</td>
+<td>com.nobroker.test.Profile@77f1baf5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 2 BHK, 10000, 100000, 30Days, family, apartment, Semi, 2-wheeler</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=140.0.3485.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [817757de061baae67b23b7fc5ce31c7a, getElementText {id=f.81470045429914C32132D6475011AAFA.d.561DE5805B5BA36268C364ED84F0FBD8.e.238}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.66, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62593}, msedge: {msedgedriverVersion: 140.0.3485.66 (bdccd021a49b..., userDataDir: C:\Users\asing207\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62593/devtoo..., se:cdpVersion: 140.0.3485.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (817757de061baae67b23b7fc5ce31c7a)] -&gt; xpath: (//div[contains(text(),&apos;Preferred Tenants&apos;)])[2]/preceding::div[1]]
+Session ID: 817757de061baae67b23b7fc5ce31c7a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.getText(Unknown Source)
+	at com.nobroker.pages.PropertyListPage.validateFilter(PropertyListPage.java:276)
+	at com.nobroker.test.Profile.validFilters(Profile.java:177)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace452431415", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace452431415'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=140.0.3485.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [817757de061baae67b23b7fc5ce31c7a, getElementText {id=f.81470045429914C32132D6475011AAFA.d.561DE5805B5BA36268C364ED84F0FBD8.e.238}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.66, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62593}, msedge: {msedgedriverVersion: 140.0.3485.66 (bdccd021a49b..., userDataDir: C:\Users\asing207\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62593/devtoo..., se:cdpVersion: 140.0.3485.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (817757de061baae67b23b7fc5ce31c7a)] -&gt; xpath: (//div[contains(text(),&apos;Preferred Tenants&apos;)])[2]/preceding::div[1]]
+Session ID: 817757de061baae67b23b7fc5ce31c7a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.getText(Unknown Source)
+	at com.nobroker.pages.PropertyListPage.validateFilter(PropertyListPage.java:276)
+	at com.nobroker.test.Profile.validFilters(Profile.java:177)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>23</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
 <tr>
 <td title='com.nobroker.test.Profile.getOwnerDetailsWithLogin()'><b>getOwnerDetailsWithLogin</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate owner details after login</td>
-<td></td>
-<td>35</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.resetFilters()'><b>resetFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate reset filter functionality<br>Parameters: 3 BHK, 15000, 100000, Immediate, family, apartment, Full, 4-wheeler</td>
-<td></td>
-<td>27</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.validInputTest()'><b>validInputTest</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate search with valid input<br>Parameters: Pune, baner</td>
-<td></td>
-<td>14</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.invalidInputSearch()'><b>invalidInputSearch</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate error message for invalid locality input<br>Parameters: Mumbai, bangalore adfa delhi</td>
-<td></td>
-<td>12</td>
-<td>com.nobroker.test.Profile@77f1baf5</td></tr>
-<tr>
-<td title='com.nobroker.test.Profile.validFilters()'><b>validFilters</b><br>Test class: com.nobroker.test.Profile<br>Test method: To validate filter functionality<br>Parameters: 2 BHK, 10000, 100000, 30Days, family, apartment, Semi, 2-wheeler</td>
-<td></td>
-<td>23</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div style=&quot;width:32%;line-height:40px;border-right:1px solid #efefef;border-top-left-radius:4px&quot; class=&quot;cursor-pointer text-primary-color border-0 border-b-4 border-solid border-primary-color font-bold&quot;&gt;...&lt;/div&gt; is not clickable at point (762, 288). Other element would receive the click: &lt;div class=&quot;nb-otp__input-label&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=140.0.3485.66)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [18eb38d463115b9c9620ad95b8d9529f, clickElement {id=f.CDB0A201A3DF92E7B79E1D102F22BB57.d.33E777DA3047570FED847093D8FB422C.e.133}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.66, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50558}, msedge: {msedgedriverVersion: 140.0.3485.66 (bdccd021a49b..., userDataDir: C:\Users\asing207\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50558/devtoo..., se:cdpVersion: 140.0.3485.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (18eb38d463115b9c9620ad95b8d9529f)] -&gt; xpath: //div[@id=&apos;app&apos;]/descendant::div[text()=&apos;Rent&apos;]]
+Session ID: 18eb38d463115b9c9620ad95b8d9529f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.nobroker.pages.HomePage.clickOnRent(HomePage.java:53)
+	at com.nobroker.test.Profile.performSearch(Profile.java:73)
+	at com.nobroker.test.Profile.getOwnerDetailsWithLogin(Profile.java:232)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace880314240", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace880314240'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div style=&quot;width:32%;line-height:40px;border-right:1px solid #efefef;border-top-left-radius:4px&quot; class=&quot;cursor-pointer text-primary-color border-0 border-b-4 border-solid border-primary-color font-bold&quot;&gt;...&lt;/div&gt; is not clickable at point (762, 288). Other element would receive the click: &lt;div class=&quot;nb-otp__input-label&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=140.0.3485.66)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [18eb38d463115b9c9620ad95b8d9529f, clickElement {id=f.CDB0A201A3DF92E7B79E1D102F22BB57.d.33E777DA3047570FED847093D8FB422C.e.133}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 140.0.3485.66, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50558}, msedge: {msedgedriverVersion: 140.0.3485.66 (bdccd021a49b..., userDataDir: C:\Users\asing207\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50558/devtoo..., se:cdpVersion: 140.0.3485.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (18eb38d463115b9c9620ad95b8d9529f)] -&gt; xpath: //div[@id=&apos;app&apos;]/descendant::div[text()=&apos;Rent&apos;]]
+Session ID: 18eb38d463115b9c9620ad95b8d9529f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.nobroker.pages.HomePage.clickOnRent(HomePage.java:53)
+	at com.nobroker.test.Profile.performSearch(Profile.java:73)
+	at com.nobroker.test.Profile.getOwnerDetailsWithLogin(Profile.java:232)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>21</td>
 <td>com.nobroker.test.Profile@77f1baf5</td></tr>
 </table><p>
 </body>

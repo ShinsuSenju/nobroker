@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="NoBroker Automation Suite" parallel="false">
+
   <!-- Suite for running NoBroker Profile test cases -->
 
   <listeners>
     <listener class-name="com.nobroker.listeners.AnnotationListener" />
   </listeners>
 
-  <test name="Profile Functional Tests">
-    <!-- Browser and test data parameters -->
+  <!-- Test for Edge -->
+  <test name="Profile Functional Tests - Edge">
     <parameter name="Browser" value="edge" />
     <parameter name="city" value="Mumbai" />
     <parameter name="locality1" value="airoli" />
@@ -18,12 +19,6 @@
     <classes>
       <class name="com.nobroker.test.Profile">
         <methods>
-          <!-- Uncomment to run all or specific test cases -->
-          <include name="validInputTest" />
-          <include name="invalidInputSearch" />
-          <include name="validSearchWithLocalities" />
-          <include name="validSearchWith4Localities" />
-          <include name="validFilters" />
           <include name="resetFilters" />
           <include name="getOwnerDetailsWithoutLogin" />
           <include name="getOwnerDetailsWithLogin" />
@@ -32,4 +27,26 @@
       </class>
     </classes>
   </test>
+
+  <!-- Test for Chrome -->
+  <test name="Profile Functional Tests - Chrome">
+    <parameter name="Browser" value="chrome" />
+    <parameter name="city" value="Mumbai" />
+    <parameter name="locality1" value="airoli" />
+    <parameter name="locality2" value="rabale" />
+    <parameter name="locality3" value="thane" />
+
+    <classes>
+      <class name="com.nobroker.test.Profile">
+        <methods>
+
+          <include name="resetFilters" />
+          <include name="getOwnerDetailsWithoutLogin" />
+          <include name="getOwnerDetailsWithLogin" />
+          <include name="sortProperties" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+
 </suite>

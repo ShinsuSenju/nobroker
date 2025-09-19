@@ -12,8 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PropertyDetailsPage extends BasePage {
 
-	// 'Contacted' button (disabled when already contacted)
-
+    // Page Web WebElements
 	@FindBy(id = "getOwnerDetails")
 	WebElement ownerContacted;
 	@FindBy(id= "payPlanType")
@@ -23,34 +22,32 @@ public class PropertyDetailsPage extends BasePage {
 		super(driver);
 	}
 	
-    // Clicks the 'Get Owner Details' button using Actions
-    public void clickToGetDetails() throws InterruptedException {
+    // Clicks the 'Get Owner Details' button 
+    public void clickToGetDetails() {
 		waitUntilClick(getOwnerDetailsBtn, 5);
 
 		action.moveToElement(getOwnerDetailsBtn);
  	    action.click(getOwnerDetailsBtn).build().perform();
 
-//		clickUsingJs(getOwnerDetailsBtn);
+ 	    //clickUsingJs(getOwnerDetailsBtn);
 
 	}
 	
+    //check if already contacted or prompt to subscribe appear
 	public boolean checkContacted() {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 	    try {
-	        // Wait until either 'Contacted' button is present or 'Subscribe Plan' is visible
 	        wait.until(ExpectedConditions.or(
 	            ExpectedConditions.presenceOfElementLocated(By.id("ownerContacted")),
 	            ExpectedConditions.visibilityOf(subscribePlan)
 	        ));
 
-	        // Check if 'Contacted' button is disabled
-	        if (ownerContacted.getAttribute("disabled") != null &&
+
+	        if (!ownerContacted.isEnabled() &&
 	            ownerContacted.getText().equalsIgnoreCase("Contacted")) {
 	            return true;
 	        }
-
-	        // Check if 'Subscribe Plan' is visible
 	        if (subscribePlan.isDisplayed()) {
 	            return true;
 	        }
@@ -70,7 +67,7 @@ public class PropertyDetailsPage extends BasePage {
 			waitUntilClick(signUpSubmitBtn, 5);
 			return true;
 		}catch(Exception e) {
-//			System.out.println("Sign Up Pop Did not appear!");
+			//System.out.println("Sign Up Pop Did not appear!");
 			return false;
 		}
 	}
